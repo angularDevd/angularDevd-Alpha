@@ -1,0 +1,62 @@
+<br />
+<div class="container-fluid">
+  <div class="row">
+    <accordion [isAnimated]="true" class="client-team-infos">
+      <accordion-group style="position: relative;" heading="Client and team infos">
+        <form>
+          <div class="row">
+            <div class="col-md-3">
+              <h6>Code du client</h6>
+              <input
+                [(ngModel)]="selectedValue"
+                [typeahead]="states"
+                typeaheadOptionField="name"
+                (typeaheadOnSelect)="onSelect($event)"
+                [typeaheadOptionsLimit]="5"
+                class="form-control"
+                name="clientCode"
+              />
+            </div>
+            <div class="col-md-3">
+              <h6>Nom du client</h6>
+              <input
+                [(ngModel)]="selectedValue"
+                [typeahead]="states"
+                typeaheadOptionField="name"
+                (typeaheadOnSelect)="onSelect($event)"
+                class="form-control"
+                name="clientName"
+              />
+            </div>
+            <div class="col-md-3">
+              <h6>Adresse</h6>
+              <input
+                [(ngModel)]="selectedValue"
+                [typeahead]="states"
+                typeaheadOptionField="name"
+                (typeaheadOnSelect)="onSelect($event)"
+                class="form-control"
+                name="clientAddress"
+              />
+            </div>
+            <div class="col-md-3">
+              <h6>Telephone</h6>
+              <input
+                [(ngModel)]="selectedValue"
+                [typeahead]="states"
+                typeaheadOptionField="name"
+                (typeaheadOnSelect)="onSelect($event)"
+                class="form-control"
+                name="clientPhone"
+              />
+            </div>
+
+          </div>
+        </form>
+      </accordion-group>
+      <accordion-group style="position: relative;" heading="Relation clients">
+        <p>Some content</p>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>

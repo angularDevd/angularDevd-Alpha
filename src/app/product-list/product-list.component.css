@@ -1,0 +1,11 @@
+.client-team-infos {
+  width: -webkit-fill-available;
+}
+
+.panel-default {
+  background-color: white !important;
+}
+
+bs-dropdown-container {
+  z-index: 9999 !important;
+}

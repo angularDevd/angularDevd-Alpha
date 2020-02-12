@@ -1,0 +1,14 @@
+button {
+    background-color: #6635a1 !important;
+    border-color: #6635a1 !important;
+}
+
+button :hover :active :focus{
+    border-color: white !important;
+    box-shadow: white !important;
+}
+
+.btn-primary :focus {
+    border-color: white !important;
+    box-shadow: white !important;
+}
